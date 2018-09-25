@@ -21,5 +21,5 @@ Uncomment line 14-23 in index.js
 |3.bundle.js|1.85 KB||
 |4.bundle.js|1.67 KB||
 |5.bundle.js|1.67 KB||
-|6.bundle.js|99.9 KB| -> react-dom|
+|6.bundle.js|100 KB| -> react-dom|
 |index.html|272 bytes||
