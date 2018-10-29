@@ -1,12 +1,13 @@
 export default {
-  Test: (React, Component) => {
-    return class Test extends Component {
+  Test: (React, Component) =>
+    class Test extends Component {
       constructor(props) {
         super(props);
         this.state = {
           component: null,
         };
       }
+
       componentDidMount() {
         import('./one-dynamic.jsx').then(OneModule => {
           const One = OneModule.default.One(React, Component);
@@ -20,14 +21,15 @@ export default {
           });
         });
       }
+
       render() {
+        const { component } = this.state;
         return (
           <React.Fragment>
             <h1>Test!</h1>
-            {this.state.component}
+            {component}
           </React.Fragment>
         );
       }
-    };
-  },
+    },
 };

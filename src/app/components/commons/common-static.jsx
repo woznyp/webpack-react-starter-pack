@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
-export default class Common extends Component {
-  render() {
-    return <h2>Common! {this.props.title}</h2>;
-  }
-}
+import React from 'react';
+
+export default props => {
+  const { title } = props;
+  return (
+    <h2>
+      Common!
+      {title}
+    </h2>
+  );
+};

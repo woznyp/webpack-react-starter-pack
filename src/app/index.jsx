@@ -2,9 +2,10 @@ import './index.scss';
 
 /** STATIC LOADING - BEGIN */
 
-// import React, { Component } from 'react';
+// import React from 'react';
 // import ReactDOM from 'react-dom';
-// import Test from './components/test-static.jsx';
+// import Test from './components/test-static';
+
 // ReactDOM.render(<Test />, document.querySelector('#app'));
 
 /** STATIC LOADING - END */
@@ -12,7 +13,7 @@ import './index.scss';
 /** DYNAMIC LOADING - BEGIN */
 
 // import('react').then(React => {
-//   const Component = React.default.Component;
+//   const { Component } = React.default;
 
 //   import('react-dom').then(ReactDOM => {
 //     import('./components/test-dynamic.jsx').then(TestModule => {

@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import Common from './commons/common-static.jsx';
+import React from 'react';
+import Common from './commons/common-static';
 
-export default class One extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Common title={'One static'} />
-      </React.Fragment>
-    );
-  }
-}
+export default () => (
+  <React.Fragment>
+    <Common title="One static" />
+  </React.Fragment>
+);

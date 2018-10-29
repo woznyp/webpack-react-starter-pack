@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import One from './one-static.jsx';
-import Two from './two-static.jsx';
+import One from './one-static';
+import Two from './two-static';
 
 export default class Test extends Component {
   constructor(props) {
@@ -9,6 +9,7 @@ export default class Test extends Component {
       component: null,
     };
   }
+
   componentDidMount() {
     this.setState({ component: <One /> }, () => {
       setTimeout(() => {
@@ -16,11 +17,13 @@ export default class Test extends Component {
       }, 2000);
     });
   }
+
   render() {
+    const { component } = this.state;
     return (
       <React.Fragment>
         <h1>Test!</h1>
-        {this.state.component}
+        {component}
       </React.Fragment>
     );
   }
