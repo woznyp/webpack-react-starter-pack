@@ -60,9 +60,6 @@ module.exports = (env, argv) => ({
                 test: /\.(js|jsx)$/,
                 use: {
                     loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/react', '@babel/preset-env']
-                    }
                 },
                 include: [path.resolve(__dirname, 'src')]
             },

@@ -1,48 +1,62 @@
 {
-    "name": "webpack-react-starter-pack",
-    "version": "1.0.0",
-    "description": "Starter pack for React Application built with Webpack",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack --mode development",
-        "build:prod": "webpack --mode production",
-        "start": "webpack-dev-server",
-        "eslint": "eslint src",
-        "webpack": "webpack"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/woznyp/webpack-react-starter-pack.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/woznyp/webpack-react-starter-pack/issues"
-    },
-    "homepage": "https://github.com/woznyp/webpack-react-starter-pack#readme",
-    "dependencies": {
-        "@babel/core": "^7.1.2",
-        "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-        "@babel/preset-env": "^7.1.0",
-        "@babel/preset-react": "^7.0.0",
-        "babel-loader": "^8.0.4",
-        "css-loader": "^1.0.0",
-        "file-loader": "^2.0.0",
-        "html-webpack-plugin": "^3.2.0",
-        "mini-css-extract-plugin": "^0.4.4",
-        "node-sass": "^4.9.3",
-        "optimize-css-assets-webpack-plugin": "^5.0.1",
-        "react": "^16.5.2",
-        "react-dom": "^16.5.2",
-        "sass-loader": "^7.1.0",
-        "style-loader": "^0.23.1",
-        "uglifyjs-webpack-plugin": "^2.0.1",
-        "webpack": "^4.20.2",
-        "webpack-cli": "^3.1.2"
-    },
-    "devDependencies": {
-        "webpack-bundle-analyzer": "^3.0.2",
-        "webpack-dev-server": "^3.1.9"
-    }
+  "name": "webpack-react-starter-pack",
+  "version": "2.0.0",
+  "description": "Starter pack for React Application built with Webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "start": "webpack-dev-server",
+    "eslint": "eslint src",
+    "webpack": "webpack",
+    "prettier": "prettier --config --write .prettierrc ./src/**/*.(jsx|scss)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woznyp/webpack-react-starter-pack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woznyp/webpack-react-starter-pack/issues"
+  },
+  "homepage": "https://github.com/woznyp/webpack-react-starter-pack#readme",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "1.14.3",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead",
+    "not ie <= 11",
+    "not ie_mob <= 11"
+  ]
 }
